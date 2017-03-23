@@ -1,0 +1,82 @@
+$blue: #A8D8DE;
+$grey: #233340;
+$green: #238902;
+$darkBlue: #834DEd;
+$blaa: Helvetica, sans-serif;
+
+@mixin blaa-laa {
+  font-size: 45px;
+  font-family: monospace;
+  color: $green;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+body {
+  background-color: $blue;
+}
+
+h1, h2, h3 {
+  @include blaa-laa;
+}
+
+h2 {
+  color: darkBlue;
+}
+
+nav {
+
+a {
+  color: green;
+  text-decoration: none;
+  &:hover{
+    color: navy;
+  }
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+
+}
+
+a {
+  color: purple;
+}
+
+button {
+  @include border-radius(5px);
+  background-color: red;
+  color: white;
+  &:hover {
+    background-color: darken(navy, 20%)
+  }
+
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}

@@ -1,0 +1,31 @@
+CREATE TABLE students1(
+  ID SERIAL PRIMARY KEY NOT NULL,
+  NAME TEXT NOT NULL,
+  AGE INT,
+  ADDRESS TEXT
+);
+
+--CRUD COMMANDS
+INSERT
+SELECT
+UPDATE
+DELETE
+
+INSERT INTO table_name VALUES (column-values);
+SELECT column_name FROM table_name;
+SELECT * FROM students1 WHERE name = NAME;
+--SEARCH ALPHABETICALLY
+SELECT age, address FROM STUDENTS1 WHERE age > 30 ORDER BY address LIKE 'A Z';
+--NAMES OF STUDENTS LIVING IN PARTICULAR LOCATIONS
+SELECT name FROM students1 WHERE address LIKE '%NY'OR address LIKE '%MA';
+
+INSERT INTO students1 VALUES (1, 'Jack TheLad', 21, '50 Jack Street');
+INSERT INTO students1 VALUES (2, 'Wiley Cayote', 22, '50 Wiley Street');
+INSERT INTO students1 VALUES (3, 'Nicky Nichols', 23, '50 Nicky Lane');
+INSERT INTO students1 VALUES (4, 'Adam Alice', 24, '50 Allie street');
+INSERT INTO students1 VALUES (5, 'Alistair Scott', 21, '50 Scottie Street');
+INSERT INTO students1 VALUES (6, 'Nancy Gong', 40, '200 Horton Ave., Lynbrook, NY');
+INSERT INTO students1 VALUES (7, 'Laura Rossi', 70, 'Unlisted');
+INSERT INTO students1 VALUES (8, 'David Daniele', 28, '300 Dannington Ln., Washington, DC');
+INSERT INTO students1 VALUES (9, 'Greg Fitzgerald', 25, 'Unlisted');
+INSERT INTO students1 VALUES (10, 'Randi Fitz', 28, 'Oceanside, NY');

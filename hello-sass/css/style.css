@@ -1,0 +1,48 @@
+body {
+  background-color: #A8D8DE; }
+
+h1, h2, h3 {
+  font-size: 45px;
+  font-family: monospace;
+  color: #238902; }
+
+h2 {
+  color: darkBlue; }
+
+nav a {
+  color: green;
+  text-decoration: none; }
+  nav a:hover {
+    color: navy; }
+
+nav ul {
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+a {
+  color: purple; }
+
+button {
+  border-radius: 5px;
+  background-color: red;
+  color: white; }
+  button:hover {
+    background-color: #00001a; }
+
+.message, .warning, .success, .error {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  font-size: 15px;
+  margin-top: 20px; }
+
+.warning {
+  border-color: yellow; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }

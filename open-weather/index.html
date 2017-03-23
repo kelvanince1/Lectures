@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+  </head>
+  <body>
+    <form id="zippa">
+      <button type="submit" name='button'>Search</button>
+      <input type="text" name="" id="zipcode">
+    </form>
+
+    <div id="forecast" style='display: none'>
+      <h1>Here's the weather for <span class='city'></span> today</h1>
+      <h2>Here's the temperature for <span id="temp"></span> today</h2>
+      <h3>Here's the latitude <span id="lat"></span> for <span class='city'></span> today</h3>
+      <h3>Here's the longitude <span id="long"></span> today</h3>
+      <h3>Here's the sunrise time <span id="sunrise">today</span></h3>
+      <h4>Description <span id='desc'></span></h4>
+      <img src="" alt="" id="weather-img">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset='utf-8'></script>
+  </body>
+</html>
